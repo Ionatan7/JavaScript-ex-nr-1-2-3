@@ -1,0 +1,22 @@
+class Version(major, minor, patch){
+
+    rolloutVersions=[major,minor,patch];
+    function major(){
+    major++;
+    minor=0;
+    patch=0;
+          }
+
+          function minor(){
+              minor++;
+              patch=0;
+          }
+
+          function patch(){
+              patch++;
+          }
+          function rollout(){ major=rolloutVersions[0],minor=rolloutVersions[1], patch=rolloutVersions[2]}
+
+function release(){return (major, minor, patch)}
+
+}
